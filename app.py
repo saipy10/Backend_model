@@ -23,7 +23,7 @@ def manual_encode(input_json):
     """Apply manual label encoding for incoming user JSON"""
     return {
         "person_age": input_json["person_age"],
-        "person_gender": "female",
+        "person_gender": 0,
         "person_education": education_map[input_json["person_education"]],
         "person_income": input_json["person_income"],
         "person_emp_exp": input_json["person_emp_exp"],
